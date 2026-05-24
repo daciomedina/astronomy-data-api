@@ -1,0 +1,29 @@
+[project]
+name = "astronomy-data-api"
+version = "0.1.0"
+description = "Educational astronomy data API built with FastAPI."
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi>=0.116.0",
+    "uvicorn[standard]>=0.35.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.0",
+    "httpx>=0.28.0",
+    "ruff>=0.12.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
