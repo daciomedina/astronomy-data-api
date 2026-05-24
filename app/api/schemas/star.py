@@ -1,8 +1,7 @@
-from dataclasses import dataclass
+from pydantic import BaseModel
 
 
-@dataclass(frozen=True)
-class Star:
+class StarResponse(BaseModel):
     id: str
     name: str
     distance_light_years: float
