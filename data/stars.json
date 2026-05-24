@@ -1,0 +1,23 @@
+[
+  {
+    "id": "sirius",
+    "name": "Sirius",
+    "distance_light_years": 8.6,
+    "apparent_magnitude": -1.46,
+    "spectral_type": "A1V"
+  },
+  {
+    "id": "alpha-centauri",
+    "name": "Alpha Centauri",
+    "distance_light_years": 4.37,
+    "apparent_magnitude": -0.27,
+    "spectral_type": "G2V"
+  },
+  {
+    "id": "barnards-star",
+    "name": "Barnard's Star",
+    "distance_light_years": 5.96,
+    "apparent_magnitude": 9.54,
+    "spectral_type": "M4V"
+  }
+]

@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 from app.api.health import router as health_router
+from app.api.v1.stars import router as stars_router
 
 app = FastAPI(
     title="Astronomy Data API",
@@ -9,3 +10,4 @@ app = FastAPI(
 )
 
 app.include_router(health_router)
+app.include_router(stars_router)
