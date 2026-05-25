@@ -17,6 +17,14 @@ class JsonStarRepository(StarRepository):
             key=lambda star: star.distance_light_years,
         )[:limit]
 
+    def find_by_id(self, star_id: str) -> Star | None:
+        stars = self._load_stars()
+
+        return next(
+            (star for star in stars if star.id == star_id),
+            None,
+        )
+
     def _load_stars(self) -> list[Star]:
         with self.file_path.open("r", encoding="utf-8") as file:
             raw_stars = json.load(file)
