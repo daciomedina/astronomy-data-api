@@ -8,6 +8,8 @@ requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.116.0",
     "uvicorn[standard]>=0.35.0",
+    "astroquery>=0.4.10",
+    "astropy>=7.0.0",
 ]
 
 [dependency-groups]
@@ -27,3 +29,6 @@ line-length = 88
 [build-system]
 requires = ["setuptools>=80"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
